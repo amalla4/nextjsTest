@@ -7,12 +7,15 @@ export default function FirstPost() {
   return (
     <Layout>
     <Head>
-        <title>First Post</title>
+        <title>Projects</title>
     </Head>
-    <h1>FirstPost:</h1>
-    <p>- Setting up next.js</p>
+    <h1>PrevProjects:</h1>
+    <ul>
+      <li>Starter Next.js blog</li>
+      <li>TMDB MERN stack</li>
+      <li>Fullstack Next.js blog</li>
+    </ul>
     <h2>
-    {/* <Link href='/'>Back to home</Link> */}
     </h2>
     </Layout>
   )

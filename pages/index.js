@@ -22,14 +22,14 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <section className={utilStyles.headingMd}>
-        <p>Sample website from next.js docs</p>
+        <p>Learning next.js T_T</p>
         <p>
-          Previous <Link href='/posts/first-post'>post(s).</Link>
+          Past <Link href='/posts/first-post'>projects.</Link>
         </p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Blog:</h2>
         <ul className={utilStyles.list}>
 
           {allPostsData.map(({ id, date, title }) => (
@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
               {date}
             </li>
           ))}
-          
+
         </ul>
       </section>
 

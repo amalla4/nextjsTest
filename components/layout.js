@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'AP';
+const name = 'AP Malla';
 export const siteTitle = 'Next.js Blog AP reeeeee';
 
 export default function Layout({ children, home }) {
