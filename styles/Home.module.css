@@ -16,6 +16,7 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
+  color: rgb(168, 62, 243);
 }
 
 .title {
@@ -44,7 +45,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   max-width: 800px;
   margin-top: 3rem;
 }
