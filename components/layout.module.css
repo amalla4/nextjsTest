@@ -1,7 +1,8 @@
 .container{
-    max-width: 25rem;
+    max-width: 60rem;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
 .header {
