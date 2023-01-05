@@ -50,3 +50,8 @@
   .lightText {
     color: #666;
   }
+
+  .servedData {
+    font-size: small;
+    color:rgb(99, 7, 25);
+  }
