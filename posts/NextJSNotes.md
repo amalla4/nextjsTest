@@ -3,28 +3,36 @@ title: 'NextJS notes'
 date: '2023-01-04'
 ---
 
-Next.js:
+**Next.js:**
 
-==============================================
+------------------
 
-Docs at: https://nextjs.org/docs/getting-started
+Docs at: [https://nextjs.org/docs/getting-started](https://nextjs.org/docs/getting-started)
 
-Starting with interactive foundation course: https://nextjs.org/learn/basics/create-nextjs-app
-- npx create-next-app nextjs-blog
-- cd nextjs-blog 
-- npm run dev  (localhost:3000)
+Starting with interactive foundation course: [https://nextjs.org/learn/basics/create-nextjs-app](https://nextjs.org/learn/basics/create-nextjs-app)
+
+
+`npx create-next-app nextjs-blog` 
+<br>
+
+`cd nextjs-blog` 
+<br>
+
+`npm run dev  (localhost:3000)`
 
 In next.js, a page is a React Component exported from a file in the pages directory. 
-pages/index.js ==> route is '/'
-pages/post/post.js ==> route is '/post/post'
 
-^^ create a .js file under pages directory ==> path to file becomes the URL path ^^
+- pages/index.js ==> route is '/'
+- pages/post/post.js ==> route is '/post/post'
+
+So when we create a .js file under pages directory, the path to the file becomes the URL path
 
 Components can have any name but must be exported as a default export.
 
-==============================================
+------------------
 
-- Link
+**Link**
+
 Link components using next/link: 
     - import Link from 'next/link';
 
@@ -34,9 +42,10 @@ use <a> tag if link is required to external page
 Next.js automatically optimizes your application for the best performance by code splitting, client-side navigation, and prefetching (in production).
 Only the code requested page is first loaded for faster load
 
-==============================================
+------------------
 
-- Assets, Metadata, and CSS
+**Assets, Metadata, and CSS**
+
 next.js can serve static assets like images under the public directory. 
 
 next.js provides 'Image' component to handle - image responsiveness(scree sizes) and optimization
@@ -45,12 +54,11 @@ next.js provides 'Image' component to handle - image responsiveness(scree sizes)
 To use CSS Module, filemame must end in .module.css
 
 pages/_app.js for global CSS 
-(https://nextjs.org/docs/advanced-features/custom-app)
+[https://nextjs.org/docs/advanced-features/custom-app](https://nextjs.org/docs/advanced-features/custom-app)
 
+------------------
 
-==============================================
-
-- Pre-rendering & data-fetching:
+**Pre-rendering & data-fetching:**
 
 By default, Next.js pre-renders every page. 
 This means that Next.js generates HTML for each page in advance, instead of having it all done by client-side JavaScript. 
@@ -71,12 +79,13 @@ It will be slower, but the pre-rendered page will always be up-to-date.
 Or you can skip pre-rendering and use client-side JavaScript to populate frequently updated data.
 
 ------------------
-Static site generation with data:
+**Static site generation with data:**
+
 - For pages that can only be generated using data fetched during BUILD time
 - use async function called getStaticProps
 - getStaticProps runs at build time and fetches the data and sends it as props to the page
 
- - getStaticProps only runs on the server-side. 
+ - **getStaticProps** only runs on the server-side. 
  It will never run on the client-side. 
  It won’t even be included in the JS bundle for the browser. 
  That means you can write code such as direct database queries without them being sent to browsers.
@@ -97,7 +106,8 @@ Static site generation with data:
 
 ---------------------
 
-Dynamic Routes:
+**Dynamic Routes:**
+
 Pages that begin with [ and end with ] are dynamic routes in Next.js.
 example: [testDynamicRoute].js
 
