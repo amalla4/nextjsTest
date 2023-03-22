@@ -1,1 +1,1 @@
-[Learning Next.js](https://amalla4.github.io).
+[Learning Next.js](https://nextjs.org/learn/basics/deploying-nextjs-app).
